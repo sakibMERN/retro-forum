@@ -20,6 +20,7 @@ const loadPosts = async (category) => {
 
 const displayAllPost = (posts) => {
   const postContainer = document.getElementById("post-container");
+  postContainer.innerHTML = "";
   posts.forEach((post) => {
     console.log(post);
     const div = document.createElement("div");
